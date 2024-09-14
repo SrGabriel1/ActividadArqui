@@ -1,0 +1,7 @@
+Pruebas\MailSender.class
+Configuracion\Inicializador.class
+Persistencia\CorreoProton.class
+Interfaz\EnviarCorreo.class
+Persistencia\CorreoOutlook.class
+Configuracion\CambioServidor.class
+Persistencia\CorreoGmail.class
