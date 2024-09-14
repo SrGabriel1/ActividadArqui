@@ -4,10 +4,22 @@
  */
 package Configuracion;
 
+import Interfaz.EnviarCorreo;
+
 /**
  *
  * @author Gabriel
  */
 public class CambioServidor {
+      private String tipoCorreo;
+
+    public EnviarCorreo getTipoCorreo() throws Exception {
+        return Inicializador.InicializarCorreo(tipoCorreo);
+    }
+
+    public void setTipoCorreo(String tipoCorreo) {
+        this.tipoCorreo = tipoCorreo;
+    }
     
+  
 }

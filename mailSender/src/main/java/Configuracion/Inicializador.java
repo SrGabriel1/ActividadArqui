@@ -7,7 +7,6 @@ package Configuracion;
 import Interfaz.EnviarCorreo;
 import Persistencia.CorreoGmail;
 import Persistencia.CorreoOutlook;
-import Persistencia.CorreoProton;
 
 /**
  *
@@ -15,14 +14,14 @@ import Persistencia.CorreoProton;
  */
 public class Inicializador {
 
-    public EnviarCorreo InicializarCorreo(String tipoCorreo) {
+     String InicializarCorreo;
+
+    public static EnviarCorreo InicializarCorreo(String tipoCorreo) throws Exception {
         if (tipoCorreo.equalsIgnoreCase("gmail")) {
             return new CorreoGmail();
         } else if (tipoCorreo.equalsIgnoreCase("outlook")) {
             return new CorreoOutlook();
-        } else if (tipoCorreo.equalsIgnoreCase("proton")) {
-            return new CorreoProton();
         }
-        throw new IllegalArgumentException("Tipo de correo no soportado: " + tipoCorreo);
+        throw new Exception("Tipo de correo no soportado: " + tipoCorreo);
     }
 }

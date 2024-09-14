@@ -10,6 +10,6 @@ package Interfaz;
  */
 public interface EnviarCorreo {
 
-    public void enviarCorreo(String destinatario, String mensaje);
+    public void enviarCorreo(String usuario,String contra,String destinatario, String mensaje,String asunto)throws Exception;
 
 }
