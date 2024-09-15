@@ -15,6 +15,8 @@ import javax.swing.JOptionPane;
  */
 public class Correo extends javax.swing.JFrame {
 
+    String tipoCorreo;
+
     /**
      * Creates new form Correo
      */
@@ -95,7 +97,7 @@ public class Correo extends javax.swing.JFrame {
         });
         getContentPane().add(EnviarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 430, -1, -1));
 
-        listaCorreos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gmail", "Outlook", " " }));
+        listaCorreos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gmail", "Outlook" }));
         getContentPane().add(listaCorreos, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, -1, -1));
 
         jLabel5.setText("Tipo de Correo");
@@ -117,12 +119,15 @@ public class Correo extends javax.swing.JFrame {
 
     private void EnviarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnviarBtnActionPerformed
         try {
+            tipoCorreo = listaCorreos.getSelectedItem().toString();
             String usuario = Usuariotxt.getText();
             String contra = Contratxt.getText();
             String tipoCorreo = (String) listaCorreos.getSelectedItem();
             String destinatario = DestinatarioTxt.getText();
             String mensaje = Mensajetxt.getText();
             String asunto = Asuntotxt.getText();
+            
+           
             if (asunto.isEmpty()) {
                 asunto = "sin asunto";
             }
@@ -134,6 +139,10 @@ public class Correo extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Destinatario y mensaje no pueden estar vacíos");
                 return;
             }
+            if(!validarCorreo(usuario, tipoCorreo.toLowerCase())){
+                JOptionPane.showMessageDialog(this, "El usuario no coincide con el tipo");
+                return;
+                 }
             CambioServidor c = new CambioServidor();
             c.setTipoCorreo(tipoCorreo);
             EnviarCorreo i = c.getTipoCorreo();
@@ -143,6 +152,13 @@ public class Correo extends javax.swing.JFrame {
             Logger.getLogger(Correo.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_EnviarBtnActionPerformed
+
+    private boolean validarCorreo(String correo, String tipoCorreo) {
+        if (correo.contains(tipoCorreo) || correo.contains("potros.itson.edu.mx")) {
+            return true;
+        }
+        return false;
+    }
 
     private void UsuariotxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsuariotxtActionPerformed
         // TODO add your handling code here:

@@ -19,6 +19,6 @@ public class MailSender {
         CambioServidor c = new CambioServidor();
         c.setTipoCorreo("gmail");
         EnviarCorreo i = c.getTipoCorreo();
-        i.enviarCorreo("yohan.melendrez244907@potros.itson.edu.mx", "1642Mel.", "yohanss1234@gmail.com", "la prueba fue un exito", "prueba");
+        i.enviarCorreo("haloalcantar@gmail.com", "", "diego.alcantar247122@potros.itson.edu.mx", "eres el mejor", "prueba");
     }
 }
