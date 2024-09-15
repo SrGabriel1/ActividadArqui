@@ -41,25 +41,30 @@ public class CorreoOutlook implements EnviarCorreo {
     public void enviarCorreo(String usuario,String contra,String destinatario, String mensaje, String asunto) throws Exception {
         //Esto es para conectarnos con el servidor de outlook
         Properties propiedades = new Properties();
-        propiedades.put("mail.smtp.auth", "true");
-        propiedades.put("mail.smtp.starttls.enable", "true");
         propiedades.put("mail.smtp.host", "smtp.office365.com");
+        propiedades.setProperty("mail.smtp.starttls.enable", "true");
         propiedades.put("mail.smtp.port", "587");
-        propiedades.put("mail.smtp.ssl.trust", "smtp.office365.com");
-        propiedades.put("mail.smtp.ssl.protocols", "TLSv1.2");
-        //Aqui se inicia sesion en el gmail
+        propiedades.setProperty("mail.smtp.port", "587");
+        propiedades.put("mail.smtp.user", usuario);
+        propiedades.setProperty("mail.smtp.auth", "true");
+
+        //Aqui se inicia sesion en el outlook
         Session sesion = Session.getInstance(propiedades, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(usuario, contra);
             }
         });
+        MimeMessage correo = new MimeMessage(sesion);
+
         //Aqui le envias el correo a la persona que quisiste
-        Message correo = new MimeMessage(sesion);
         correo.setFrom(new InternetAddress(usuario));
         correo.setRecipients(Message.RecipientType.TO, InternetAddress.parse(destinatario));
         correo.setSubject(asunto);
         correo.setText(mensaje);
+        Transport t = sesion.getTransport("smtp");
+        t.connect(usuario, contra);
+        t.sendMessage(correo, correo.getRecipients(Message.RecipientType.TO));
         Transport.send(correo);
         System.out.println("Correo enviado correctamente a: " + destinatario);
     }

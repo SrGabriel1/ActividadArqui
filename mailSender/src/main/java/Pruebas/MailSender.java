@@ -4,9 +4,7 @@
 package Pruebas;
 
 import Configuracion.CambioServidor;
-import Configuracion.Inicializador;
 import Interfaz.EnviarCorreo;
-import Persistencia.CorreoGmail;
 
 /**
  *
@@ -15,16 +13,17 @@ import Persistencia.CorreoGmail;
 public class MailSender {
 
     /**
-     * Método principal donde se ejecutan una prueba para el subsistema
-     * No es la clase principal para el funcionamiento
+     * Método principal donde se ejecutan una prueba para el subsistema No es la
+     * clase principal para el funcionamiento
+     *
      * @param args Argumento de linea de comandos
      * @throws Exception Exception
      */
     public static void main(String[] args) throws Exception {
-    //Para que funcione el envio de correo ocupas tener activado el Acceso de aplicaciones menos seguras en la cuenta de envio
+        //Para que funcione el envio de correo ocupas tener activado el Acceso de aplicaciones menos seguras en la cuenta de envio
         CambioServidor c = new CambioServidor();
         c.setTipoCorreo("gmail");
         EnviarCorreo i = c.getTipoCorreo();
-        i.enviarCorreo("haloalcantar@gmail.com", "", "diego.alcantar247122@potros.itson.edu.mx", "eres el mejor", "prueba");
+        i.enviarCorreo("yohan.melendrez244907@potros.itson.edu.mx", "", "diego.alcantar247122@potros.itson.edu.mx", "prueba ", "prueba");
     }
 }

@@ -3,21 +3,21 @@
 @options
 @packages
 -classpath
-'C:/Users/nanis/.m2/repository/com/sun/mail/jakarta.mail/2.0.1/jakarta.mail-2.0.1.jar;C:/Users/nanis/.m2/repository/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar'
+'C:/Users/Gabriel/.m2/repository/com/sun/mail/jakarta.mail/2.0.1/jakarta.mail-2.0.1.jar;C:/Users/Gabriel/.m2/repository/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar'
 -encoding
 'UTF-8'
 -protected
 -source
 '21'
 -sourcepath
-'C:/Users/nanis/OneDrive/Documentos/GitHub/Arqui/mailSender/src/main/java'
+'C:/Users/Gabriel/OneDrive/Documentos/GitHub/Arqui/mailSender/src/main/java'
 -author
 -bottom
 'Copyright &#169; 2024. All rights reserved.'
 -charset
 'UTF-8'
 -d
-'C:/Users/nanis/OneDrive/Documentos/GitHub/Arqui/mailSender/target/reports/apidocs'
+'C:/Users/Gabriel/OneDrive/Documentos/GitHub/Arqui/mailSender/target/reports/apidocs'
 -docencoding
 'UTF-8'
 -doctitle
@@ -30,20 +30,26 @@ Configuracion
 Interfaz
 Persistencia
 Pruebas
-C:\Users\nanis\.m2\repository\com\sun\mail\jakarta.mail\2.0.1\jakarta.mail-2.0.1.jar = 1726378282696
-C:\Users\nanis\.m2\repository\com\sun\activation\jakarta.activation\2.0.1\jakarta.activation-2.0.1.jar = 1726378282734
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\src\main\java = 1726378133819
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\allclasses-index.html = 1726380431412
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\allpackages-index.html = 1726380431415
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\element-list = 1726380431316
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\help-doc.html = 1726380431442
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\index-all.html = 1726380431433
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\index.html = 1726380431399
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\member-search-index.js = 1726380431420
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\module-search-index.js = 1726380431416
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\overview-summary.html = 1726380431438
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\overview-tree.html = 1726380431394
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\package-search-index.js = 1726380431417
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\search.html = 1726380431436
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\tag-search-index.js = 1726380431421
-C:\Users\nanis\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\type-search-index.js = 1726380431418
+C:\Users\Gabriel\.m2\repository\com\sun\mail\jakarta.mail\2.0.1\jakarta.mail-2.0.1.jar = 1726339942841
+C:\Users\Gabriel\.m2\repository\com\sun\activation\jakarta.activation\2.0.1\jakarta.activation-2.0.1.jar = 1726339942884
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\src\main\java = 1726288414989
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\allclasses-index.html = 1726435485274
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\allpackages-index.html = 1726435485276
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\copy.svg = 1726435485301
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\element-list = 1726435485206
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\help-doc.html = 1726435485296
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\index-all.html = 1726435485288
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\index.html = 1726435485266
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\link.svg = 1726435485302
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\member-search-index.js = 1726435485280
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\module-search-index.js = 1726435485278
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\overview-summary.html = 1726435485293
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\overview-tree.html = 1726435485263
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\package-search-index.js = 1726435485279
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\script.js = 1726435485300
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\search-page.js = 1726435485305
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\search.html = 1726435485291
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\search.js = 1726435485304
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\stylesheet.css = 1726435485298
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\tag-search-index.js = 1726435485281
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\Arqui\mailSender\target\reports\apidocs\type-search-index.js = 1726435485279
