@@ -10,7 +10,7 @@ import Persistencia.CorreoGmail;
 
 /**
  *
- * @author Gabriel
+ * @author Equipo 3
  */
 public class MailSender {
 
