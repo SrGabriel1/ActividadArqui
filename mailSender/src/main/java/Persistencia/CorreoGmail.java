@@ -16,19 +16,24 @@ import java.util.Properties;
 
 /**
  *
- * @author Gabriel
+ * @author Equipo 3
  */
 public class CorreoGmail implements EnviarCorreo {
 
+    /**
+     * Constructor vacio por defecto
+     */
     public CorreoGmail() {
     }
 
 
     /**
-     *
-     * @param destinatario
-     * @param mensaje
-     * @throws Exception
+     * Metodo donde se conecta al servidor del correo, donde pide la contraseña y 
+     * manda el correo con el mensaje, si se acompleto con exito soltara un mensaje
+     * de correo enviado correctamente
+     * @param destinatario Destinatario 
+     * @param mensaje Mensaje
+     * @throws Exception Exception
      */
     @Override
     public void enviarCorreo(String usuario,String contra,String destinatario, String mensaje, String asunto) throws Exception {

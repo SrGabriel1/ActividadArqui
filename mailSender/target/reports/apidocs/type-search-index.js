@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"Configuracion","l":"CambioServidor"},{"p":"Persistencia","l":"CorreoGmail"},{"p":"Persistencia","l":"CorreoOutlook"},{"p":"Interfaz","l":"EnviarCorreo"},{"p":"Configuracion","l":"Inicializador"},{"p":"Pruebas","l":"MailSender"}];updateSearchResults();

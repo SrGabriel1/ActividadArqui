@@ -16,14 +16,27 @@ import java.util.Properties;
 
 /**
  *
- * @author Gabriel
+ * @author Equipo 3
  */
 public class CorreoOutlook implements EnviarCorreo {
 
+    /**
+     * Constructor vacio por defecto
+     */
     public CorreoOutlook() {
     }
 
-
+    /**
+     * Metodo donde se conecta al servidor del correo, donde pide la contraseña y 
+     * manda el correo con el mensaje, si se acompleto con exito soltara un mensaje
+     * de correo enviado correctamente
+     * @param usuario Usuario
+     * @param contra Contrasenia
+     * @param destinatario Destinatario
+     * @param mensaje Mensaje
+     * @param asunto Asunto 
+     * @throws Exception Exception
+     */
     @Override
     public void enviarCorreo(String usuario,String contra,String destinatario, String mensaje, String asunto) throws Exception {
         //Esto es para conectarnos con el servidor de outlook

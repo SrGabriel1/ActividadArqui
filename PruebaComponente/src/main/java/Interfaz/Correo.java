@@ -11,10 +11,10 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Gabriel
+ * @author Equipo 3
  */
 public class Correo extends javax.swing.JFrame {
-
+    //Atributos de la clase
     String tipoCorreo;
 
     /**
@@ -117,6 +117,12 @@ public class Correo extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_DestinatarioTxtActionPerformed
 
+    /**
+     * Metodo donde se ejecuta el boton de enviar, aqui el correo sera enviado 
+     * mediante llamadas de los metodos y lanzando distintos mensajes dependiendo
+     * del estado del correo
+     * @param evt evt
+     */
     private void EnviarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnviarBtnActionPerformed
         try {
             tipoCorreo = listaCorreos.getSelectedItem().toString();
@@ -153,6 +159,12 @@ public class Correo extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_EnviarBtnActionPerformed
 
+    /**
+     * Metodo que valida el correo a donde va a ser dirigido el mensaje
+     * @param correo Correo
+     * @param tipoCorreo Tipo de correo
+     * @return Validacion de correo
+     */
     private boolean validarCorreo(String correo, String tipoCorreo) {
         if (correo.contains(tipoCorreo) || correo.contains("potros.itson.edu.mx")) {
             return true;

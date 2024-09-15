@@ -10,12 +10,19 @@ import Persistencia.CorreoOutlook;
 
 /**
  *
- * @author Gabriel
+ * @author Equipo 3
  */
 public class Inicializador {
-
+    //Atributos de la clase
      String InicializarCorreo;
 
+     /**
+      * Metodo que ayuda para ignorar las mayusculas 
+      * y minusculas al momento de especificar el tipo de correo
+      * @param tipoCorreo Tipo de correo
+      * @return Tipo de correo
+      * @throws Exception Exception
+      */
     public static EnviarCorreo InicializarCorreo(String tipoCorreo) throws Exception {
         if (tipoCorreo.equalsIgnoreCase("gmail")) {
             return new CorreoGmail();

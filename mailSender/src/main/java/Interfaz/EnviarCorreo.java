@@ -6,10 +6,18 @@ package Interfaz;
 
 /**
  *
- * @author Gabriel
+ * @author Equipo 3
  */
 public interface EnviarCorreo {
-
+/**
+ * Método que hace enviar el correo con sus parametros correspondientes
+ * @param usuario Usuario
+ * @param contra Contrasenia
+ * @param destinatario Destinatario 
+ * @param mensaje Mensaje
+ * @param asunto Asunto
+ * @throws Exception Exception
+ */
     public void enviarCorreo(String usuario,String contra,String destinatario, String mensaje,String asunto)throws Exception;
 
 }
